@@ -1,0 +1,19 @@
+{
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "baseUrl": "https://test-parfuemerie.gd6.by/",
+  "experimentalFetchPolyfill": true,
+  "defaultCommandTimeout": 15000,
+  "pageLoadTimeout": 30000,
+  "chromeWebSecurity": false,
+  "env": {
+    "db": {
+      "host": "192.168.0.3:8002",
+      "user": "magento2",
+      "password": "e*Uwn3.S)21i",
+      "database": "magento2"
+    }
+  },
+  "extends": "eslint:recommended",
+  "projectId": "r9cygq"
+}
