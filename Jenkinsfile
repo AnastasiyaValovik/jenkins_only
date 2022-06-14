@@ -3,16 +3,12 @@ pipeline {
   
   stages {
     
-      stage('Init') {
+      stage('Run tests in Docker') {
         steps{
-          sh 'npm install'
+          sh 'docker run -it -v $PWD:/e2e -w /e2e cypress/included:9.4.1'
         }
       }
-      stage('Build') {
-        steps {
-          sh 'npm cypress run'
-        }
-      }
+  
   }
 }
 
